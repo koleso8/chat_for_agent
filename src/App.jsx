@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import Layout from './pages/Layout';
-import HomePage from './pages/HomePage';
+
 import Chat from './pages/Chat';
 import Home from './components/chat/Home';
 import AgentTraining from './components/chat/AgentTraining';
@@ -12,9 +12,8 @@ const App = () => {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/chat" element={<Chat />}>
-          <Route path="" element={<Home />} />
+        <Route path="/" element={<Chat />}>
+          <Route path="/" element={<Home />} />
           <Route path="agent_training" element={<AgentTraining />} />
           <Route
             path="integration_with_local_and_internationa_labo_markets"

@@ -6,10 +6,10 @@ const Chat = () => {
     <div className="flex w-screen h-screen overflow-hidden">
       <aside className="text-white flex flex-col w-96   h-full pt-4  bg-black border-r-2 border-[#87ceeb] fixed z-50 ">
         <nav className="flex flex-col  navigationChat h-full ">
-          <Link to="/" className="t px-4 text-lg mb-8 flex gap-4 py-2">
+          <Link to="agent.com" className="t px-4 text-lg mb-8 flex gap-4 py-2">
             <IoArrowBackCircleSharp size={30} /> Back to site
           </Link>
-          <Link to="/chat" className="  px-4 text-lg mb-5 py-2">
+          <Link to="/" className="  px-4 text-lg mb-5 py-2">
             Home
           </Link>
           <NavLink to="agent_training" className=" px-4 text-lg py-2">
