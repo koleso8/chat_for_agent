@@ -1,0 +1,102 @@
+.title {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 600;
+  line-height: 60px;
+  color: #d9d9d9;
+  font-size: 50px;
+  @media (min-width: 768px) {
+    font-size: 62px;
+  }
+}
+
+.subTitle {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #79d0fb 0%, #79d0fb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.impTitle {
+  font-size: 128px;
+  color: #fff;
+  margin-bottom: 0px;
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.impSubTitle {
+  font-size: 26px;
+  color: #6796f0;
+  margin-bottom: 14px;
+}
+
+.impCard {
+  border-radius: 5px;
+  background: linear-gradient(180deg, #582acf 0%, #240c2e 100%);
+  padding: 30px;
+  font-weight: 400;
+  color: #fff;
+  width: 320px;
+  @media (min-width: 768px) {
+    width: 460px;
+  }
+}
+
+.cardSub {
+  line-height: 18px;
+}
+
+.tokenList {
+  line-height: 16px;
+  li {
+    padding: 20px;
+  }
+  :nth-child(1) {
+    margin-left: 0;
+    @media (min-width: 768px) {
+      margin-left: 268px;
+    }
+  }
+  :nth-child(2),
+  :nth-child(4) {
+    margin-left: 0;
+    @media (min-width: 768px) {
+      margin-left: 368px;
+    }
+  }
+  :nth-child(3) {
+    margin-left: 0;
+    @media (min-width: 768px) {
+      margin-left: 468px;
+    }
+  }
+  :nth-child(5) {
+    margin-left: 0;
+    @media (min-width: 768px) {
+      margin-left: 310px;
+    }
+  }
+  :nth-child(6) {
+    margin-left: 0;
+    @media (min-width: 768px) {
+      margin-left: 230px;
+    }
+  }
+}
+
+.buttonHover {
+  background: #fff;
+  transition: all 400ms linear;
+}
+
+.buttonHover:hover {
+  background: #6ebefb;
+  color: #fff;
+}
