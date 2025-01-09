@@ -3,7 +3,7 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const Chat = () => {
   return (
-    <div className="flex w-screen h-screen overflow-hidden">
+    <div className="flex w-screen h-screen overflow-x-hidden">
       <aside className="text-white flex flex-col w-96   h-full pt-4  bg-black border-r-2 border-[#87ceeb] fixed z-50 ">
         <nav className="flex flex-col  navigationChat h-full ">
           <Link to="agent.com" className="t px-4 text-lg mb-8 flex gap-4 py-2">
@@ -17,7 +17,7 @@ const Chat = () => {
           </NavLink>
           <NavLink
             to="integration_with_local_and_internationa_labo_markets"
-            className="  px-4 text-lg py-2"
+            className="  px-4 text-lg py-2  select-none  opacity-65 pointer-events-none"
           >
             <span>
               Integration with local and international labor markets (soon)
@@ -25,7 +25,7 @@ const Chat = () => {
           </NavLink>
           <NavLink
             to="verification_and_security"
-            className=" px-4 text-lg py-2"
+            className=" px-4 text-lg py-2 select-none  opacity-65 pointer-events-none"
           >
             <span>Verification and Security (soon)</span>
           </NavLink>

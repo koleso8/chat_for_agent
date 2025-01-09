@@ -40,17 +40,9 @@
 .impCard {
   border-radius: 5px;
   background: linear-gradient(180deg, #582acf 0%, #240c2e 100%);
-  padding: 30px;
+  padding: 8px 10px;
   font-weight: 400;
   color: #fff;
-  width: 320px;
-  @media (min-width: 768px) {
-    width: 460px;
-  }
-}
-
-.cardSub {
-  line-height: 18px;
 }
 
 .tokenList {
@@ -99,4 +91,24 @@
 .buttonHover:hover {
   background: #6ebefb;
   color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0200175e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00a5cecd;
 }
