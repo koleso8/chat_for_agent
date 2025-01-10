@@ -31,7 +31,7 @@ const Chat = () => {
           </NavLink>
         </nav>
       </aside>
-      <div className="flex flex-col justify-between  w-full h-full p-6 pl-[418px]">
+      <div className="flex flex-col justify-between  w-full h-full p-6 pl-[418px] pb-40">
         <Outlet />
       </div>
     </div>

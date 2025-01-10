@@ -1,12 +1,14 @@
 import { Field, Form, Formik } from 'formik';
 import { useDispatch } from 'react-redux';
 import { sendMessageThunk } from '../../redux/messages/messagesOperations';
+import { delThankAndWait } from '../../redux/messages/slice';
 
-const Input = () => {
+const Input = ({ setUserCode }) => {
   const dispatch = useDispatch();
   const userMessageHandler = ({ userMessage }, action) => {
     action.resetForm();
-
+    setUserCode(userMessage);
+    dispatch(delThankAndWait());
     dispatch(sendMessageThunk(userMessage));
   };
   return (

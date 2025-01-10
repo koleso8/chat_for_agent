@@ -1,13 +1,22 @@
+import { useEffect } from 'react';
 import BGForOutlet from './BGForOutlet';
 import ChatModal from './ChatModal';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { delThankAndWait, falseLoading } from '../../redux/messages/slice';
 
 const Home = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(delThankAndWait());
+    dispatch(falseLoading());
+  }, [dispatch]);
+
   return (
     <div className="text-white h-[96%]">
       <BGForOutlet />
       <ChatModal>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <img src="/logo.png" alt="" className="w-36" />
 
           <h3 className="text-2xl font-bold text-center text-white mb-4">

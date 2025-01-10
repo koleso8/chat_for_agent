@@ -44,6 +44,13 @@
   font-weight: 400;
   color: #fff;
 }
+.impCardClient {
+  border-radius: 5px;
+  background: linear-gradient(180deg, #612ce8 0%, #9e4cec 100%);
+  padding: 8px 10px;
+  font-weight: 400;
+  color: #fff;
+}
 
 .tokenList {
   line-height: 16px;
@@ -105,7 +112,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #5c029396;
 }
 
 /* Handle on hover */

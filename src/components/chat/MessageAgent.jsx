@@ -1,9 +1,7 @@
-import React from 'react';
-
-const MessageAgent = () => {
+const MessageAgent = ({ children = ' Okey, send me your code' }) => {
   return (
-    <div className=" rounded-lg impCard inline-flex">
-      Okey, send me your code
+    <div className=" rounded-lg impCard mr-auto ">
+      <p className="typewriter">{children}</p>
     </div>
   );
 };
