@@ -38,53 +38,14 @@ const AgentTraining = () => {
 
   return (
     <div className="flex flex-col justify-between h-full overflow-y-scroll w-full">
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2  pb-20 ">
         <MessageAgent />
         {userCode && <MessageClient>{userCode}</MessageClient>}
         {isLoading && sendAwait()}
 
         {thank && <MessageAgent>{thank}</MessageAgent>}
         {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
-        {thank && <MessageAgent>{thank}</MessageAgent>}
-        {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{wait}</MessageAgent>}
+        {thank && wait && response && <MessageAgent>{response}</MessageAgent>}
       </div>
 
       <div className="fixed bottom-3 w-4/6">

@@ -33,8 +33,11 @@ const slice = createSlice({
     builder
       .addCase(sendMessageThunk.fulfilled, (state, action) => {
         state.message = action.payload;
+        state.message = 'URRAAAAAAA';
       })
-      .addCase(sendMessageThunk.rejected, (state, action) => {})
+      .addCase(sendMessageThunk.rejected, (state, action) => {
+        state.message = 'Please try again';
+      })
       .addCase(sendMessageThunk.pending, state => {
         state.loading = true;
       });
