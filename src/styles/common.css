@@ -39,6 +39,7 @@
 
 .impCard {
   border-radius: 5px;
+  text-wrap: wrap;
   background: linear-gradient(180deg, #582acf 0%, #240c2e 100%);
   padding: 8px 10px;
   font-weight: 400;

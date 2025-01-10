@@ -45,7 +45,9 @@ const AgentTraining = () => {
 
         {thank && <MessageAgent>{thank}</MessageAgent>}
         {wait && <MessageAgent>{wait}</MessageAgent>}
-        {thank && wait && response && <MessageAgent>{response}</MessageAgent>}
+        {thank && wait && response && (
+          <MessageAgent typing="">{response}</MessageAgent>
+        )}
       </div>
 
       <div className="fixed bottom-3 w-4/6">

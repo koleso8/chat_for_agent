@@ -11,7 +11,7 @@ export const sendMessageThunk = createAsyncThunk(
       const { data } = await axios.get('sdfsdf', prompt + sendMessage);
 
       console.log(prompt + sendMessage);
-      return data.data;
+      return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
